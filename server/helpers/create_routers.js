@@ -21,9 +21,9 @@ const createRouter = function (collection) {
   // handle post request
 
     router.post('/', (req, res) => {
-        const newStatsData = req.body
+        const newJournalData = req.body
         collection
-        .insertOne(newStatsData)
+        .insertOne(newJournalData)
         .then((result) => {
             res.json(result.ops[0])
         })
