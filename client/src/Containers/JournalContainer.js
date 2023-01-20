@@ -1,19 +1,44 @@
 import React from 'react'
-import JournalEntry from '../Components/JournalEntry'
+import JournalForm from '../Components/JournalForm'
 import JournalList from '../Components/JournalList'
 
 const JournalContainer = () => {
 
-    const [journalntries, setJournalEntries] = useState([]);
+    const [journalEntries, setJournalEntries] = useState([]);
 
     useEffect(() => {
-        getBookings().then((allBookings) => {
-            setBookings(allBookings);
+        getEntries().then((allEntries) => {
+            setEntries(allEntries);
         })
 
-    }, [])
+    }, []);
+
+    const addEntry = (journalEntry) => {
+        newEntries = [...journalEntries, journalEntry]
+        setJournalEntries(newEntries)
+    };
+
+    const removeEntry = (id) => {
+        const newEntries = [...journalEntries]
+        const indexToDel = newEntries.map(s => s._id).indexOf(id)
+        newEntries.splice(indexToDel, 1)
+        setJournalEntries(newEntries)
+    };
+
+    const updateEntry = (journalEntry) => {
+        const newEntries = [...journalEntries]
+        const indexToUpdate = newEntries.map(s => s._id).indexOf(id)
+        newEntries[indexToUpdate] = journalEntry
+        setJournalEntries(newEntries)
+    };
+
+
+
     return (
-        <div>JournalContainer</div>
+        <div class="journal-container">
+            <JournalForm addJournalEntry={addJournalEntry} />
+            <BookingList journalEntries={journalEntries} removeEntry={removeEntry} updateEntry={updateEntry} />
+        </div>
     )
 }
 
