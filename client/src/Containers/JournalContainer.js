@@ -1,8 +1,12 @@
-import React from 'react'
-import { useState, useEffect } from "react";
+
+import '../App.css';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "../Components/Home";
 import JournalForm from '../Components/JournalForm'
 import JournalList from '../Components/JournalList'
 import { getEntries } from '../Components/JournalService'
+import NavBar from '../Components/NavBar'
 
 
 const JournalContainer = () => {
@@ -38,10 +42,20 @@ const JournalContainer = () => {
 
 
     return (
+
         <div class="journal-container">
-            <JournalForm addEntry={addEntry} />
-            <JournalList journalEntries={journalEntries} removeEntry={removeEntry} updateEntry={updateEntry} />
-        </div>
+            <Router>
+                <NavBar />
+                <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/entry' element={<JournalForm addEntry={addEntry} />} />
+                <Route path='/entry' element={<JournalList journalEntries={journalEntries} removeEntry={removeEntry} updateEntry={updateEntry} />} />
+                </Routes>
+            </Router>
+      </div>
+
+
+        
     )
 }
 
