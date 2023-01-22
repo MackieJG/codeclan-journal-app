@@ -25,7 +25,7 @@ const Home = () => {
                 <img id="self-logo" src={logo} alt="" />
             </StyledLogo>
             <StyledButtons>
-                <a href='/journal'>Make an Entry</a>
+                <a href='/entry'>Make an Entry</a>
                 <a href='/stats'>How am I doing?</a>
             </StyledButtons>
         </>
