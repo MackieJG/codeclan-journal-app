@@ -35,7 +35,7 @@ const NavBar = () => {
         <div>
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/entry">Make an Entry</StyledLink>
-        <StyledLink to="/entry">How am I doing?</StyledLink>
+        <StyledLink to="/list">How am I doing?</StyledLink>
         </div>
     </NavBarContainer>
   );

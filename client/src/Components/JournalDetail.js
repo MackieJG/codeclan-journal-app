@@ -22,6 +22,7 @@ const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
             <p>Journal Entry Date: {entry.date}</p>
             {/* <p>Checked in? {entry.checked_in ? 'true' : 'false'}</p> */}
             {/* <button onClick={() => handleUpdate()}>Check {entry.checked_in ? 'Out' : 'In'}</button> */}
+            <button onClick={()=> handleUpdate()}></button>
             <button onClick={() => handleDelete()}> 🗑 </button>
             <hr />
         </>
