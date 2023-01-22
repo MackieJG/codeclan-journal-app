@@ -49,7 +49,7 @@ const JournalContainer = () => {
                 <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/entry' element={<JournalForm addEntry={addEntry} />} />
-                <Route path='/entry' element={<JournalList journalEntries={journalEntries} removeEntry={removeEntry} updateEntry={updateEntry} />} />
+                <Route path='/list' element={<JournalList journalEntries={journalEntries} removeEntry={removeEntry} updateEntry={updateEntry} />} />
                 </Routes>
             </Router>
       </div>
