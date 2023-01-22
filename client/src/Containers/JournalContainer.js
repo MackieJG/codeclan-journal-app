@@ -40,7 +40,7 @@ const JournalContainer = () => {
     return (
         <div class="journal-container">
             <JournalForm addEntry={addEntry} />
-            <JournalList journalList={JournalList} removeEntry={removeEntry} updateEntry={updateEntry} />
+            <JournalList journalEntries={journalEntries} removeEntry={removeEntry} updateEntry={updateEntry} />
         </div>
     )
 }
