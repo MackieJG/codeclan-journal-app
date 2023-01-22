@@ -25,7 +25,6 @@ font-family: soligant;
 font-size: 1.5rem;
 text-decoration: none;
 font-weight: 600px;
-
 `
 
 
