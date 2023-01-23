@@ -1,16 +1,9 @@
-import { deleteEntry, putEntry } from './JournalService';
-import IndividualJournalEntry from './IndividualJournalEntry';
+import { deleteEntry } from './JournalService';
 import { Link } from 'react-router-dom';
 
 const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
 
-    const handleUpdate = () => {
-        const updatedEntry = { ...entry };
-        putEntry(updatedEntry)
-            .then((data) => {
-                updateEntry(data);
-            })
-    }
+
 
     const handleDelete = () => {
         deleteEntry(entry._id)
@@ -19,13 +12,6 @@ const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
             })
     };
 
-    const JournalEntry = ((entry) => {
-        return (
-            <>
-            <IndividualJournalEntry entry={entry} removeEntry={removeEntry} key={entry._id} updateEntry={updateEntry} handleUpdate={handleUpdate} />
-            </>
-        )
-    })
 
     return (
         <>

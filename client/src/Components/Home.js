@@ -1,7 +1,6 @@
 import logo from "../images/main_image.png";
 import styled from 'styled-components';
 
-
 const Home = () => {
 
     const StyledLogo = styled.div`
@@ -25,13 +24,15 @@ const Home = () => {
                 <img id="self-logo" src={logo} alt="" />
             </StyledLogo>
             <StyledButtons>
-                <a href='/entry'>Make an Entry</a>
-                <a href='/stats'>How am I doing?</a>
-            </StyledButtons>
+
+
+            {/* <StyledParagraph>
+                Chart your progress throughout your learning
+                at CodeClan and optimise your health with
+                the .self wellbeing app
+            </StyledParagraph> */}
         </>
-
     )
-
 
 }
 

@@ -10,7 +10,7 @@ const JournalForm = ({ addEntry }) => {
     meals: 0,
     screentime: 0,
     downtime: 0,
-    family: 0,
+    downtime: 0,
     mood: 0,
     optimism: 0,
     hydration: 0,
@@ -43,14 +43,14 @@ const JournalForm = ({ addEntry }) => {
     })
     setFormData({
       date: "",
-      sleep: 0,
-      meals: 0,
-      screentime: 0,
-      downtime: 0,
-      family: 0,
-      mood: 0,
-      optimism: 0,
-      hydration: 0,
+      sleep: 1,
+      meals: 1,
+      screentime: 1,
+      downtime: 1,
+      family: 1,
+      mood: 1,
+      optimism: 1,
+      hydration: 1,
       how_1: "",
       what_1: "",
       what_2: "",
@@ -60,7 +60,7 @@ const JournalForm = ({ addEntry }) => {
       what_5: "",
       what_6: "",
     });
-  }
+  };
 
 
 
@@ -78,166 +78,96 @@ const JournalForm = ({ addEntry }) => {
           required />
       </div>
       <div className="formWrap">
-        <label htmlFor="sleep">How many hours sleep did you get?</label>
+        <label htmlFor="sleep">I got a good night's sleep</label>
         <select
           onChange={onChange}
           id="sleep"
           name="sleep"
           value={formData.sleep}
           required >
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
         </select>
       </div>
       <div className="formWrap">
-        <label htmlFor="meals">How many meals did you have today?</label>
+        <label htmlFor="meals"> I had a healthy breakfast, lunch and dinner</label>
         <select
           onChange={onChange}
           id="meals"
           name="meals"
           value={formData.meals}
           required >
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
         </select>
       </div>
       <div className="formWrap">
-        <label htmlFor="screentime">How many hours screentime did you have today?</label>
+        <label htmlFor="screentime">My screentime was reasonable</label>
         <select
           onChange={onChange}
           id="screentime"
           name="screentime"
           value={formData.screentime}
           required >
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
         </select>
       </div>
       <div className="formWrap">
-        <label htmlFor="family">How many hours family time did you have today?</label>
+        <label htmlFor="downtime">I had a good amount of downtime</label>
         <select
           onChange={onChange}
-          id="family"
-          name="family"
-          value={formData.family}
+          id="downtime"
+          name="downtime"
+          value={formData.downtime}
           required >
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
         </select>
       </div>
       <div className="formWrap">
-        <label htmlFor="mood">How was your mood today?</label>
+        <label htmlFor="mood">I felt good today</label>
         <select
           onChange={onChange}
           id="mood"
           name="mood"
           value={formData.mood}
           required >
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
         </select>
       </div>
       <div className="formWrap">
-        <label htmlFor="optimism">How optimism did you feel today?</label>
-        <select
-          onChange={onChange}
-          id="optimism"
-          name="optimism"
-          value={formData.optimism}
-          required >
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-      </div>
-      <div className="formWrap">
-        <label htmlFor="hydration">How many glasses of water did you have today?</label>
-        <select
-          onChange={onChange}
-          id="hydration"
-          name="hydration"
-          value={formData.hydration}
-          required >
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
+        <div className="formWrap">
+          <label htmlFor="hydration">I was able to hydrate well today</label>
+          <select
+            onChange={onChange}
+            id="hydration"
+            name="hydration"
+            value={formData.hydration}
+            required >
+            <option value="1">Strongly Agree</option>
+            <option value="2">Agree somewhat</option>
+            <option value="3">Not fussed</option>
+            <option value="4">Disagree somewhat</option>
+            <option value="5">Strongly Disagree</option>
+          </select>
+        </div>
       </div>
       <div className="formWrap">
         <label htmlFor="how_1">How did you feel today in general?</label>
@@ -313,8 +243,8 @@ const JournalForm = ({ addEntry }) => {
           value={formData.what_6} />
       </div>
       <input type="submit" value="Save" id="save" />
-    </form >
+    </form>
   )
-}
+};
 
 export default JournalForm;
