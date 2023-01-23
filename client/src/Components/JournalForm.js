@@ -64,6 +64,7 @@ const JournalForm = ({ addEntry }) => {
 
 
   return (
+    <div className="formContainer">
     <form onSubmit={onSubmit} id="journal-form" >
       <h2>Add an Entry</h2>
       <div className="formWrap">
@@ -243,6 +244,7 @@ const JournalForm = ({ addEntry }) => {
       </div>
       <input type="submit" value="Save" id="save" />
     </form>
+    </div>
   )
 };
 
