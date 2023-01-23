@@ -67,10 +67,12 @@ const JournalForm = ({ addEntry }) => {
 
 
   return (
+
     <>
     <div className='logoContainer'>
     <img id="entry_logo" src={logo} alt=""/>
     </div>
+
     <div className="formContainer">
     <form onSubmit={onSubmit} id="journal-form" >
       <div className="formWrap">
