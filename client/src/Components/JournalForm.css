@@ -12,6 +12,8 @@
 .formContainer {
     display: flex;
     justify-content: center;
+    font-family: ragasta;
+    font-size: 1.5rem;
 }
 
 .formJournal> input{
