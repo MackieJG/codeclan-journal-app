@@ -1,33 +1,13 @@
+.App {
+  text-align: center;
+}
 
+@font-face {
   font-family: soligant;
   src: url(fonts/Soligant.ttf);
 }
 
 @font-face {
-  font-family: galigant;
-  src: url(fonts/Gallient.ttf);
-}
-
-@font-face {
-  font-family: ragasta_italic;
-  src: url(fonts/Ragasta\ Italic.ttf);
-}
-
-@font-face {
-  font-family: ragasta;
-  src: url(fonts/Ragasta.ttf);
-}
-
-
-.App {
-  text-align: center;
-}
-
-body{
-  background-color: rgb(234, 231, 231);
-}
-
-=======
   font-family: galigant;
   src: url(fonts/Gallient.ttf);
 }

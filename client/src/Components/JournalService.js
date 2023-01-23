@@ -20,8 +20,8 @@ export const deleteEntry = (id) => {
     })
 };
 
-export const putEntry = (payload, id) => {
-    return fetch(baseURL + id, {
+export const putEntry = (payload) => {
+    return fetch(baseURL, {
         method: 'PUT',
         body: JSON.stringify(payload),
         headers: { 'Content-Type': 'application/json' }
