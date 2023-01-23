@@ -190,6 +190,7 @@ const JournalForm = ({ addEntry }) => {
             <option value="5">Strongly Disagree</option>
           </select>
         </div>
+        </div>
         <div className="formWrap">
           <label htmlFor="meals"> I had a healthy breakfast, lunch and dinner</label>
           <select
