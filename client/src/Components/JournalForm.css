@@ -1,23 +1,56 @@
-.logoContainer {
-    display: flex;
-    justify-content: center;
-}
-
 #entry_logo {
     width: 500px;
     height: 500px;
 }
 
-
-.formContainer {
-    display: flex;
-    justify-content: center;
-    font-family: ragasta;
-    font-size: 1.5rem;
-}
-
-.formJournal> input{
+.outer-form-container {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    text-align: center;
+    font-family: ragasta;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    align-items: center;
+
+}
+
+.datebox {
+
+    width: 10rem;
+    text-align: center;
+    font-family: ragasta;
+    font-size: 1.25rem;
+}
+
+.formWrap>label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.journalWrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.journalWrap>input {
+    display: inline-block;
+    max-width: 20rem;
+    height: 1.5rem;
+    text-align: left;
+    margin-left: 11rem;
+}
+
+.save-button {
+    font-family: ragasta;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+    border:#cfdcec;
 }
