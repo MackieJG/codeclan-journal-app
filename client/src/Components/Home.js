@@ -18,28 +18,28 @@ const Home = () => {
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: 600px;
+
+    > a {
+        text-decoration: none;
+        color: #4a4a4a;
+    }
     `
 
-    return (
-        <>
-            <StyledLogo>
-                <img id="self-logo" src={logo} alt="" />
-            </StyledLogo>
-            <StyledButtons />
-            <div style={{ position: "relative", margin: "auto", height: "80vh" }}>
-            <LineChart />
-            </div>
 
+   
 
+return (
+    <>
+        <StyledLogo>
+            <img id="self-logo" src={logo} alt="" />
+        </StyledLogo>
+        <StyledButtons>
+            <a href='/entry'>Make an Entry</a>
+            <a href='/stats'>How am I doing?</a>
+        </StyledButtons>
+    </>
 
-            {/* <StyledParagraph>
-                Chart your progress throughout your learning
-                at CodeClan and optimise your health with
-                the .self wellbeing app
-            </StyledParagraph> */}
-        </>
-    )
-
+)
 }
 
 export default Home;

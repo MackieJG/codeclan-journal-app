@@ -1,0 +1,23 @@
+.logoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#entry_logo {
+    width: 500px;
+    height: 500px;
+}
+
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    font-family: ragasta;
+    font-size: 2rem;
+}
+
+.formJournal> input{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
