@@ -18,6 +18,22 @@ const createRouter = function (collection) {
             res.json({status: 500, error: err})
         })
     })
+
+    // handle index route 
+
+    router.get('/:id' , (req, res) => {
+        const id = req.params.id;
+
+        collection
+        .findOne({ _id: ObjectID(id)})
+        .then((docs) => res.json(docs))
+        .catch((err) => {
+            console.log(err);
+            res.status(500)
+            res.json({status: 500, error: err})
+        })
+    })
+
   // handle post request
 
     router.post('/', (req, res) => {

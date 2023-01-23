@@ -6,6 +6,14 @@ const JournalForm = ({ addEntry }) => {
 
   const [formData, setFormData] = useState({
     date: "",
+    sleep: 0,
+    meals: 0,
+    screentime: 0,
+    downtime: 0,
+    downtime: 0,
+    mood: 0,
+    optimism: 0,
+    hydration: 0,
     how_1: "",
     what_1: "",
     what_2: "",
@@ -22,6 +30,12 @@ const JournalForm = ({ addEntry }) => {
     setFormData(newFormData);
   }
 
+  // const onSelect = (e) => {
+  //   const newFormData = { ...formData };
+  //   newFormData[e.target.name] = e.target.value;
+  //   setFormData(newFormData);
+  // }
+
   const onSubmit = (e) => {
     e.preventDefault();
     postEntry(formData).then((data) => {
@@ -29,6 +43,14 @@ const JournalForm = ({ addEntry }) => {
     })
     setFormData({
       date: "",
+      sleep: 1,
+      meals: 1,
+      screentime: 1,
+      downtime: 1,
+      family: 1,
+      mood: 1,
+      optimism: 1,
+      hydration: 1,
       how_1: "",
       what_1: "",
       what_2: "",
@@ -38,7 +60,7 @@ const JournalForm = ({ addEntry }) => {
       what_5: "",
       what_6: "",
     });
-  }
+  };
 
 
 
@@ -49,11 +71,103 @@ const JournalForm = ({ addEntry }) => {
         <label htmlFor="date">Date:</label>
         <input
           onChange={onChange}
-          type="text"
+          type="date"
           id="date"
           name="date"
           value={formData.date}
           required />
+      </div>
+      <div className="formWrap">
+        <label htmlFor="sleep">I got a good night's sleep</label>
+        <select
+          onChange={onChange}
+          id="sleep"
+          name="sleep"
+          value={formData.sleep}
+          required >
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+      </div>
+      <div className="formWrap">
+        <label htmlFor="meals"> I had a healthy breakfast, lunch and dinner</label>
+        <select
+          onChange={onChange}
+          id="meals"
+          name="meals"
+          value={formData.meals}
+          required >
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+      </div>
+      <div className="formWrap">
+        <label htmlFor="screentime">My screentime was reasonable</label>
+        <select
+          onChange={onChange}
+          id="screentime"
+          name="screentime"
+          value={formData.screentime}
+          required >
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+      </div>
+      <div className="formWrap">
+        <label htmlFor="downtime">I had a good amount of downtime</label>
+        <select
+          onChange={onChange}
+          id="downtime"
+          name="downtime"
+          value={formData.downtime}
+          required >
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+      </div>
+      <div className="formWrap">
+        <label htmlFor="mood">I felt good today</label>
+        <select
+          onChange={onChange}
+          id="mood"
+          name="mood"
+          value={formData.mood}
+          required >
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree somewhat</option>
+          <option value="3">Not fussed</option>
+          <option value="4">Disagree somewhat</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+      </div>
+      <div className="formWrap">
+        <div className="formWrap">
+          <label htmlFor="hydration">I was able to hydrate well today</label>
+          <select
+            onChange={onChange}
+            id="hydration"
+            name="hydration"
+            value={formData.hydration}
+            required >
+            <option value="1">Strongly Agree</option>
+            <option value="2">Agree somewhat</option>
+            <option value="3">Not fussed</option>
+            <option value="4">Disagree somewhat</option>
+            <option value="5">Strongly Disagree</option>
+          </select>
+        </div>
       </div>
       <div className="formWrap">
         <label htmlFor="how_1">How did you feel today in general?</label>
@@ -128,10 +242,9 @@ const JournalForm = ({ addEntry }) => {
           name="what_6"
           value={formData.what_6} />
       </div>
-
       <input type="submit" value="Save" id="save" />
     </form>
   )
-}
+};
 
 export default JournalForm;
