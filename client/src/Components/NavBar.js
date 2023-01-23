@@ -25,6 +25,7 @@ const StyledLink = styled(Link)`
   font-size: 20px;
   font-weight: 600;
   align-items: center;
+  font-family: soligant;
 `
 
 
