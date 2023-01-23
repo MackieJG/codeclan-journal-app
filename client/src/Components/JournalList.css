@@ -4,9 +4,16 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 4rem;
+    text-decoration: none;
     
 }
 
-.journal_component ul li{
+.list_component > ul{
     text-decoration: none;
+    list-style-type: none;
+}
+
+.no_marker{
+    text-decoration: none;
+    list-style-type: none; 
 }

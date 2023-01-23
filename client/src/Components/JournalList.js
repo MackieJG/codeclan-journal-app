@@ -11,7 +11,7 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     return (
         <>
         <div className="journal_list">
-            <ul>
+            <ul className="no_marker">
                 {journalList}
             </ul>
         </div>
