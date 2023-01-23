@@ -1,6 +1,9 @@
 import React from 'react'
+import logo from '../images/make_an_entry.png';
 import { useState } from 'react';
 import { postEntry } from './JournalService';
+import './JournalForm.css';
+
 
 const JournalForm = ({ addEntry }) => {
 
@@ -64,9 +67,14 @@ const JournalForm = ({ addEntry }) => {
 
 
   return (
+
+    <>
+    <div className='logoContainer'>
+    <img id="entry_logo" src={logo} alt=""/>
+    </div>
+
     <div className="formContainer">
     <form onSubmit={onSubmit} id="journal-form" >
-      <h2>Add an Entry</h2>
       <div className="formWrap">
         <label htmlFor="date">Date:</label>
         <input
@@ -108,7 +116,7 @@ const JournalForm = ({ addEntry }) => {
         </select>
       </div>
       <div className="formWrap">
-        <label htmlFor="screentime">My screentime was reasonable</label>
+        <label htmlFor="screentime">My screentime was reasonable </label>
         <select
           onChange={onChange}
           id="screentime"
@@ -123,7 +131,7 @@ const JournalForm = ({ addEntry }) => {
         </select>
       </div>
       <div className="formWrap">
-        <label htmlFor="downtime">I had a good amount of downtime</label>
+        <label htmlFor="downtime">I had a good amount of downtime </label>
         <select
           onChange={onChange}
           id="downtime"
@@ -138,7 +146,7 @@ const JournalForm = ({ addEntry }) => {
         </select>
       </div>
       <div className="formWrap">
-        <label htmlFor="mood">I felt good today</label>
+        <label htmlFor="mood">I felt good today </label>
         <select
           onChange={onChange}
           id="mood"
@@ -154,7 +162,7 @@ const JournalForm = ({ addEntry }) => {
       </div>
       <div className="formWrap">
         <div className="formWrap">
-          <label htmlFor="hydration">I was able to hydrate well today</label>
+          <label htmlFor="hydration">I was able to hydrate well today </label>
           <select
             onChange={onChange}
             id="hydration"
@@ -169,8 +177,8 @@ const JournalForm = ({ addEntry }) => {
           </select>
         </div>
       </div>
-      <div className="formWrap">
-        <label htmlFor="how_1">How did you feel today in general?</label>
+      <div className="formJournal">
+        <label htmlFor="how_1">How did you feel today in general? </label>
         <input
           onChange={onChange}
           type="text"
@@ -179,8 +187,8 @@ const JournalForm = ({ addEntry }) => {
           value={formData.how_1}
           required />
       </div>
-      <div className="formWrap">
-        <label htmlFor="what_1">What was your favorite part of today?</label>
+      <div className="formJournal">
+        <label htmlFor="what_1">What was your favorite part of today? </label>
         <input
           onChange={onChange}
           type="text"
@@ -188,8 +196,8 @@ const JournalForm = ({ addEntry }) => {
           name="what_1"
           value={formData.what_1} />
       </div>
-      <div className="formWrap">
-        <label htmlFor="what_2">What was the best thing about CodeClan today and Why?</label>
+      <div className="formJournal">
+        <label htmlFor="what_2">What was the best thing about CodeClan today and Why? </label>
         <input
           onChange={onChange}
           type="text"
@@ -197,8 +205,8 @@ const JournalForm = ({ addEntry }) => {
           name="what_2"
           value={formData.what_2} />
       </div>
-      <div className="formWrap">
-        <label htmlFor="what_3">What was the hardest part about CodeClan today and Why?</label>
+      <div className="formJournal">
+        <label htmlFor="what_3">What was the hardest part about CodeClan today and Why? </label>
         <input
           onChange={onChange}
           type="text"
@@ -206,8 +214,8 @@ const JournalForm = ({ addEntry }) => {
           name="what_3"
           value={formData.what_3} />
       </div>
-      <div className="formWrap">
-        <label htmlFor="how_2">How did you find today’s lessons?</label>
+      <div className="formJournal">
+        <label htmlFor="how_2">How did you find today’s lessons? </label>
         <input
           onChange={onChange}
           type="text"
@@ -215,8 +223,8 @@ const JournalForm = ({ addEntry }) => {
           name="how_2"
           value={formData.how_2} />
       </div>
-      <div className="formWrap">
-        <label htmlFor="what_4">What could CodeClan do better?</label>
+      <div className="formJournal">
+        <label htmlFor="what_4">What could CodeClan do better? </label>
         <input
           onChange={onChange}
           type="text"
@@ -224,8 +232,8 @@ const JournalForm = ({ addEntry }) => {
           name="what_4"
           value={formData.what_4} />
       </div>
-      <div className="formWrap">
-        <label htmlFor="what_5">What could you do better?</label>
+      <div className="formJournal">
+        <label htmlFor="what_5">What could you do better? </label>
         <input
           onChange={onChange}
           type="text"
@@ -233,8 +241,8 @@ const JournalForm = ({ addEntry }) => {
           name="what_5"
           value={formData.what_5} />
       </div>
-      <div className="formWrap">
-        <label htmlFor="what_6">What are you most proud of today and Why?</label>
+      <div className="formJournal">
+        <label htmlFor="what_6">What are you most proud of today and Why? </label>
         <input
           onChange={onChange}
           type="text"
@@ -245,6 +253,7 @@ const JournalForm = ({ addEntry }) => {
       <input type="submit" value="Save" id="save" />
     </form>
     </div>
+    </>
   )
 };
 
