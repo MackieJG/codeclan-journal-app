@@ -1,5 +1,6 @@
 import logo from "../images/main_image.png";
 import styled from 'styled-components';
+import BarChart from "./BarChart";
 
 const Home = () => {
 
@@ -23,8 +24,8 @@ const Home = () => {
             <StyledLogo>
                 <img id="self-logo" src={logo} alt="" />
             </StyledLogo>
-            <StyledButtons>
-
+            <StyledButtons />
+            <BarChart />
 
             {/* <StyledParagraph>
                 Chart your progress throughout your learning
