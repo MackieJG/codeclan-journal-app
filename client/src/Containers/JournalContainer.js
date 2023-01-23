@@ -7,6 +7,7 @@ import JournalForm from '../Components/JournalForm'
 import JournalList from '../Components/JournalList'
 import { getEntries } from '../Components/JournalService'
 import NavBar from '../Components/NavBar'
+import IndividualJournalEntry from '../Components/IndividualJournalEntry';
 
 
 const JournalContainer = () => {
@@ -49,6 +50,7 @@ const JournalContainer = () => {
                 <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/entry' element={<JournalForm addEntry={addEntry} />} />
+                <Route path='/entry/:id' element={<IndividualJournalEntry />} />
                 <Route path='/list' element={<JournalList journalEntries={journalEntries} removeEntry={removeEntry} updateEntry={updateEntry} />} />
                 </Routes>
             </Router>

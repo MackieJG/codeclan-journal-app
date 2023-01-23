@@ -28,3 +28,8 @@ export const putEntry = (payload) => {
     })
         .then(res => res.json())
 };
+
+export const getEntry = (id) => {
+    return fetch(baseURL + id)
+        .then(res => res.json())
+};
