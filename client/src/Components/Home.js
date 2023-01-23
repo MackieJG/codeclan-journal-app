@@ -17,6 +17,7 @@ const Home = () => {
     text-decoration: none;
     font-weight: 600px;
     `
+   
 
 return (
     <>
