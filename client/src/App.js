@@ -5,7 +5,9 @@ import JournalContainer from './Containers/JournalContainer'
 
 function App() {
   return (
+    <>
     <JournalContainer />
+    </>
   );
 }
 

@@ -9,7 +9,11 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     });
     return (
         <>
+        <div className="journal_list">
+            <ul>
             {journalList}
+            </ul>
+        </div>
         </>
     )
 }
