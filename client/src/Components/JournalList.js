@@ -12,7 +12,7 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
         <>
             {journalList}
             <div style={{ position: "relative", margin: "auto", height: "40vh" }}>
-            <BarChart />
+            <BarChart data={[]} />
             </div>
         </>
     )

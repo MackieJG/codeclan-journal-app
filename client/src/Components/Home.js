@@ -1,6 +1,6 @@
 import logo from "../images/main_image.png";
 import styled from 'styled-components';
-import BarChart from "./BarChart";
+// import BarChart from "./BarChart";
 import LineChart from "./LineChart";
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
             </StyledLogo>
             <StyledButtons />
             <div style={{ position: "relative", margin: "auto", height: "80vh" }}>
-            <LineChart />
+            {/* <LineChart /> */}
             </div>
 
 

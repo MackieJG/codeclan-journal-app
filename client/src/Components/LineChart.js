@@ -21,9 +21,9 @@ ChartJS.register(
     Legend
 );
 
-const LineChart = () => {
+const LineChart = ({ data }) => {
     const labels = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-    const data = {
+    const chart_data = {
         labels,
         datasets: [
             {
@@ -44,7 +44,7 @@ const LineChart = () => {
 
     return (
         <>
-        <Line options= { options } data = { data } />
+        <Line options= { options } chart_data = { chart_data } />
         </>
         )
     };
