@@ -16,7 +16,15 @@ const Home = () => {
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: 600px;
+
+    > a {
+        text-decoration: none;
+        color: #4a4a4a;
+    }
     `
+
+
+   
 
 return (
     <>
