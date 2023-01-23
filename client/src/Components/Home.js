@@ -26,8 +26,11 @@ const Home = () => {
                 <img id="self-logo" src={logo} alt="" />
             </StyledLogo>
             <StyledButtons />
+            <div style={{ position: "relative", margin: "auto", height: "80vh" }}>
             <LineChart />
-            <BarChart />
+            </div>
+
+
 
             {/* <StyledParagraph>
                 Chart your progress throughout your learning

@@ -11,7 +11,9 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     return (
         <>
             {journalList}
+            <div style={{ position: "relative", margin: "auto", height: "40vh" }}>
             <BarChart />
+            </div>
         </>
     )
 }
