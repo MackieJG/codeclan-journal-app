@@ -10,7 +10,6 @@ const JournalForm = ({ addEntry }) => {
     meals: 0,
     screentime: 0,
     downtime: 0,
-    downtime: 0,
     mood: 0,
     optimism: 0,
     hydration: 0,
