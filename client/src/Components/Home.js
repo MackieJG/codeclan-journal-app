@@ -20,6 +20,7 @@ const Home = () => {
     > a {
         text-decoration: none;
         color: #4a4a4a;
+        font-weight:1000;
     }
     `
 
