@@ -91,8 +91,15 @@ const LineChart = () => {
     }
 
     return (
+        <>
+        <div style={{ position: "relative", margin: "auto", height: "30vh" }}>
         <Line options= { options } data = { data } />
+        </div>
+        </>
         )
     };
 
 export default LineChart;
+
+
+

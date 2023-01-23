@@ -1,6 +1,7 @@
 import logo from "../images/main_image.png";
 import styled from 'styled-components';
 import BarChart from "./BarChart";
+import LineChart from "./LineChart";
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
                 <img id="self-logo" src={logo} alt="" />
             </StyledLogo>
             <StyledButtons />
+            <LineChart />
             <BarChart />
 
             {/* <StyledParagraph>

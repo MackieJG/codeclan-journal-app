@@ -1,4 +1,5 @@
 import JournalDetail from "./JournalDetail";
+import BarChart from "./BarChart";
 
 const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     if (!journalEntries) return <h2>Loading...</h2>
@@ -10,6 +11,7 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     return (
         <>
             {journalList}
+            <BarChart />
         </>
     )
 }
