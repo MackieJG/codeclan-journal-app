@@ -1,4 +1,5 @@
 import JournalDetail from "./JournalDetail";
+import './JournalList.css';
 
 const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     if (!journalEntries) return <h2>Loading...</h2>
@@ -11,7 +12,7 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
         <>
         <div className="journal_list">
             <ul>
-            {journalList}
+                {journalList}
             </ul>
         </div>
         </>

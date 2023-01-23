@@ -1,0 +1,12 @@
+
+.journal_list > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+    
+}
+
+.journal_component ul li{
+    text-decoration: none;
+}
