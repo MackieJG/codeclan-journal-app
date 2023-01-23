@@ -1,13 +1,12 @@
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import JournalContainer from './Containers/JournalContainer'
+import Home from "./Components/Home";
+import JournalForm from './Components/JournalForm';
+import JournalList from './Components/JournalList';
 
 
 function App() {
   return (
-
-    <JournalContainer />
     <body>
       <Router>
         <Routes>
@@ -17,7 +16,6 @@ function App() {
         </Routes>
       </Router>
     </body>
-
   );
 }
 
