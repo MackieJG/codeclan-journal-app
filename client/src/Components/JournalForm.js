@@ -74,7 +74,6 @@ const JournalForm = ({ addEntry }) => {
 
       <div className="formContainer">
         <form onSubmit={onSubmit} id="journal-form" >
-          {/* <h2>Add an Entry</h2> */}
           <div className="formWrap">
             <label htmlFor="date">Select a date</label>
             <input className="datebox"
@@ -85,10 +84,10 @@ const JournalForm = ({ addEntry }) => {
               value={formData.date}
               required />
           </div>
-        
+
           <div className="formWrap">
             <label htmlFor="sleep">I got a good night's sleep</label>
-            <select
+            <select class="options"
               onChange={onChange}
               id="sleep"
               name="sleep"
@@ -103,7 +102,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="formWrap">
             <label htmlFor="meals"> I had a healthy breakfast, lunch and dinner</label>
-            <select
+            <select class="options"
               onChange={onChange}
               id="meals"
               name="meals"
@@ -118,7 +117,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="formWrap">
             <label htmlFor="screentime">My screentime was reasonable </label>
-            <select
+            <select class="options"
               onChange={onChange}
               id="screentime"
               name="screentime"
@@ -133,7 +132,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="formWrap">
             <label htmlFor="downtime">I had a good amount of downtime </label>
-            <select
+            <select class="options"
               onChange={onChange}
               id="downtime"
               name="downtime"
@@ -148,7 +147,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="formWrap">
             <label htmlFor="mood">I felt good today </label>
-            <select
+            <select class="options"
               onChange={onChange}
               id="mood"
               name="mood"
@@ -164,7 +163,7 @@ const JournalForm = ({ addEntry }) => {
           <div className="formWrap">
             <div className="formWrap">
               <label htmlFor="hydration">I was able to hydrate well today </label>
-              <select
+              <select class="options"
                 onChange={onChange}
                 id="sleep"
                 name="sleep"
@@ -182,7 +181,7 @@ const JournalForm = ({ addEntry }) => {
           </br>
           <div className="journalWrap">
             <label htmlFor="how_1">How did you feel today in general?</label>
-            <input
+            <textarea
               onChange={onChange}
               type="text"
               id="how_1"
@@ -192,7 +191,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="journalWrap">
             <label htmlFor="what_1">What was your favorite part of today?</label>
-            <input
+            <textarea
               onChange={onChange}
               type="text"
               id="what_1"
@@ -201,7 +200,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="journalWrap">
             <label htmlFor="what_2">What was the best thing about CodeClan today and why?</label>
-            <input
+            <textarea
               onChange={onChange}
               type="text"
               id="what_2"
@@ -210,7 +209,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="journalWrap">
             <label htmlFor="what_3">What was the hardest part about CodeClan today and why?</label>
-            <input
+            <textarea
               onChange={onChange}
               type="text"
               id="what_3"
@@ -219,7 +218,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="journalWrap">
             <label htmlFor="how_2">How did you find today’s lessons?</label>
-            <input
+            <textarea
               onChange={onChange}
               type="text"
               id="how_2"
@@ -228,7 +227,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="journalWrap">
             <label htmlFor="what_4">What could CodeClan do better?</label>
-            <input
+            <textarea
               onChange={onChange}
               type="text"
               id="what_4"
@@ -237,7 +236,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="journalWrap">
             <label htmlFor="what_5">What could you do better?</label>
-            <input
+            <textarea
               onChange={onChange}
               type="text"
               id="what_5"
@@ -246,7 +245,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <div className="journalWrap">
             <label htmlFor="what_6">What are you most proud of today and why?</label>
-            <input
+            <textarea
               onChange={onChange}
               type="text"
               id="what_6"
@@ -255,7 +254,7 @@ const JournalForm = ({ addEntry }) => {
           </div>
           <br>
           </br>
-          <input className= "save-button" type="submit" value="Save" id="save" />
+          <input className="save-button" type="submit" value="Save" id="save" />
         </form>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import BarChart from "./BarChart";
 import { getEntry, putEntry } from "./JournalService";
+import './IndividualJournalEntry.css';
 
 
 const IndividualJournalEntry = () => {
@@ -145,11 +145,11 @@ const IndividualJournalEntry = () => {
 
     return (
         <>
-            <form onSubmit={onSubmit} id="journal-form" >
-                <h2>Add an Entry</h2>
-                <div className="formWrap">
-                    <label htmlFor="date">Date:</label>
-                    <input
+            <h2 class="heading">View/Edit your entry</h2>
+            <form onSubmit={onSubmit} class="journal-form-indi" >
+                <div className="formWrap-2">
+                    <label class="date" htmlFor="date">Date:</label>
+                    <input class="calendar"
                         onChange={onChange}
                         type="date"
                         id="date"
@@ -157,8 +157,8 @@ const IndividualJournalEntry = () => {
                         value={entry.date}
                         required />
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="sleep">I got a good night's sleep</label>
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="sleep">I got a good night's sleep</label>
                     <select class="sleep"
                         onChange={onChange}
                         id="sleep"
@@ -171,10 +171,11 @@ const IndividualJournalEntry = () => {
                         <option value="4">Disagree somewhat</option>
                         <option value="5">Strongly Disagree</option>
                     </select>
-                    <p> {sleepTip}</p>
+                    <h3 class="tip-header">Your daily tip:</h3>
+                    <p class="tip"> {sleepTip}</p>
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="meals"> I had a healthy breakfast, lunch and dinner</label>
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="meals"> I had healthy meals today</label>
                     <select class="meals"
                         onChange={onChange}
                         id="meals"
@@ -187,10 +188,11 @@ const IndividualJournalEntry = () => {
                         <option value="4">Disagree somewhat</option>
                         <option value="5">Strongly Disagree</option>
                     </select>
-                    <p> {mealsTip}</p>
+                    <h3 class="tip-header">Your daily tip:</h3>
+                    <p class="tip"> {mealsTip}</p>
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="screentime">My screentime was reasonable</label>
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="screentime">My screentime was reasonable</label>
                     <select class="screentime"
                         onChange={onChange}
                         id="screentime"
@@ -203,10 +205,11 @@ const IndividualJournalEntry = () => {
                         <option value="4">Disagree somewhat</option>
                         <option value="5">Strongly Disagree</option>
                     </select>
-                    <p> {screentimeTip}</p>
+                    <h3 class="tip-header">Your daily tip:</h3>
+                    <p class="tip"> {screentimeTip}</p>
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="downtime">I had a good amount of downtime</label>
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="downtime">I had a good amount of downtime</label>
                     <select class="downtime"
                         onChange={onChange}
                         id="downtime"
@@ -219,10 +222,11 @@ const IndividualJournalEntry = () => {
                         <option value="4">Disagree somewhat</option>
                         <option value="5">Strongly Disagree</option>
                     </select>
-                    <p> {downtimeTip}</p>
+                    <h3 class="tip-header">Your daily tip:</h3>
+                    <p class="tip"> {downtimeTip}</p>
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="mood">I felt good today</label>
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="mood">I felt that my mood was good today</label>
                     <select class="mood"
                         onChange={onChange}
                         id="mood"
@@ -235,29 +239,30 @@ const IndividualJournalEntry = () => {
                         <option value="4">Disagree somewhat</option>
                         <option value="5">Strongly Disagree</option>
                     </select>
-                    <p> {moodTip}</p>
+                    <h3 class="tip-header">Your daily tip:</h3>
+                    <p class="tip"> {moodTip}</p>
                 </div>
-                <div className="formWrap">
-                    <div className="formWrap">
-                        <label htmlFor="hydration">I was able to hydrate well today</label>
-                        <select class="hydration"
-                            onChange={onChange}
-                            id="hydration"
-                            name="hydration"
-                            value={entry.hydration}
-                            required >
-                            <option value="1">Strongly Agree</option>
-                            <option value="2">Agree somewhat</option>
-                            <option value="3">Not fussed</option>
-                            <option value="4">Disagree somewhat</option>
-                            <option value="5">Strongly Disagree</option>
-                        </select>
-                        <p> {hydrationTip}</p>
-                    </div>
+
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="hydration">I was able to hydrate well today</label>
+                    <select class="hydration"
+                        onChange={onChange}
+                        id="hydration"
+                        name="hydration"
+                        value={entry.hydration}
+                        required >
+                        <option value="1">Strongly Agree</option>
+                        <option value="2">Agree somewhat</option>
+                        <option value="3">Not fussed</option>
+                        <option value="4">Disagree somewhat</option>
+                        <option value="5">Strongly Disagree</option>
+                    </select>
+                    <h3 class="tip-header">Your daily tip:</h3>
+                    <p class="tip"> {hydrationTip}</p>
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="how_1">How did you feel today in general?</label>
-                    <input
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="how_1">How did you feel today in general?</label>
+                    <textarea class="select"
                         onChange={onChange}
                         type="text"
                         id="how_1"
@@ -265,73 +270,74 @@ const IndividualJournalEntry = () => {
                         value={entry.how_1}
                         required />
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="what_1">What was your favorite part of today?</label>
-                    <input
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="what_1">Your favorite part of today?</label>
+                    <textarea class="select"
                         onChange={onChange}
                         type="text"
                         id="what_1"
                         name="what_1"
                         value={entry.what_1} />
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="what_2">What was the best thing about CodeClan today and Why?</label>
-                    <input
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="what_2">What was the best thing about CodeClan today and Why?</label>
+                    <textarea class="select"
                         onChange={onChange}
                         type="text"
                         id="what_2"
                         name="what_2"
                         value={entry.what_2} />
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="what_3">What was the hardest part about CodeClan today and Why?</label>
-                    <input
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="what_3">What was the hardest part about CodeClan today and Why?</label>
+                    <textarea class="select"
                         onChange={onChange}
                         type="text"
                         id="what_3"
                         name="what_3"
                         value={entry.what_3} />
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="how_2">How did you find today’s lessons?</label>
-                    <input
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="how_2">How did you find today’s lessons?</label>
+                    <textarea class="select"
                         onChange={onChange}
                         type="text"
                         id="how_2"
                         name="how_2"
                         value={entry.how_2} />
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="what_4">What could CodeClan do better?</label>
-                    <input
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="what_4">What could CodeClan do better?</label>
+                    <textarea class="select"
                         onChange={onChange}
                         type="text"
                         id="what_4"
                         name="what_4"
                         value={entry.what_4} />
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="what_5">What could you do better?</label>
-                    <input
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="what_5">What could you do better?</label>
+                    <textarea class="select"
                         onChange={onChange}
                         type="text"
                         id="what_5"
                         name="what_5"
                         value={entry.what_5} />
                 </div>
-                <div className="formWrap">
-                    <label htmlFor="what_6">What are you most proud of today and Why?</label>
-                    <input
+                <div className="formWrap-2">
+                    <label class="textarea-title" htmlFor="what_6">What are you most proud of today and Why?</label>
+                    <br></br>
+                    <textarea class="select"
                         onChange={onChange}
                         type="text"
                         id="what_6"
                         name="what_6"
                         value={entry.what_6} />
                 </div>
-                <input type="submit" value="Save" id="save" />
+                <br></br>
+                <input class="save" type="submit" value="Save" id="save" />
             </form>
 
-            <BarChart data={data} />
         </>
 
 

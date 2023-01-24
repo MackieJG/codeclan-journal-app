@@ -1,0 +1,89 @@
+.journal-form-indi {
+    grid-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto auto;
+    max-width: 1140px;
+    padding-bottom: 5rem;
+
+}
+
+.heading {
+    text-align: center;
+}
+
+.date {
+    font-size: 30px;
+}
+
+.formWrap-2 {
+    background: #8fd0ff7d;
+    border-radius: 5px;
+    min-height: 100%;
+    padding: 1.2rem 1rem;
+    border: solid 1px
+}
+
+.textarea-title {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.calendar {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+.sleep {
+    margin-top: 70px;
+    font-size: 17px;
+}
+
+.meals {
+    margin-top: 70px;
+    font-size: 17px;
+}
+
+.screentime {
+    margin-top: 70px;
+    font-size: 17px;
+}
+
+.downtime {
+    margin-top: 70px;
+    font-size: 17px;
+}
+
+.mood {
+    margin-top: 70px;
+    font-size: 17px;
+}
+
+.hydration {
+    margin-top: 70px;
+    font-size: 17px;
+}
+
+.tip {
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+
+.select {
+    margin-top: 50px;
+}
+
+.save {
+    margin-top: 30px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.tip-header {
+    margin-top: 50px;
+}

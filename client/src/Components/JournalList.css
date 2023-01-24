@@ -1,5 +1,4 @@
-
-.journal_list > ul {
+.journal_list>ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,35 +6,39 @@
     text-decoration: none;
     color: #403f3f;
     font-family: soligant;
-    font-weight:1000;
-    
+    font-weight: 1000;
+
 }
 
-.list_component > ul{
+.list_component>ul {
     text-decoration: none;
     list-style-type: none;
-    
+
 }
 
-.no_marker{
+.no_marker {
     text-decoration: none;
-    list-style-type: none; 
+    list-style-type: none;
 }
 
 a {
-    
+
     text-decoration: none;
 }
+
 a:visited {
     color: #3f3f3d;
 }
+
 a:active {
     color: #3f3f3d;
 }
- a:hover {
+
+a:hover {
     color: #3f3f3d;
 }
- a:link {
+
+a:link {
     color: #3f3f3d;
 }
 
@@ -45,7 +48,10 @@ a:active {
     padding-top: 0.5rem;
 }
 
-.list_component > li > a {
+.list_component>li>a {
     text-align: center;
 }
 
+.options {
+    font-size: 17px;
+}
