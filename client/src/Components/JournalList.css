@@ -1,3 +1,4 @@
+
 .list_component{
     text-decoration: none;
     list-style-type: none;
@@ -20,33 +21,37 @@
     text-decoration: none;
     color: #403f3f;
     font-family: soligant;
-    font-weight:1000;
-    
+    font-weight: 1000;
+
 }
 
 .no_marker{
     text-decoration: none;
-    list-style-type: none; 
+    list-style-type: none;
 }
 
 a {
-    
+
     text-decoration: none;
     align-items: center !important;
     padding-left: .75rem;
     
 
 }
+
 a:visited {
     color: #3f3f3d;
 }
+
 a:active {
     color: #3f3f3d;
 }
- a:hover {
+
+a:hover {
     color: #3f3f3d;
 }
- a:link {
+
+a:link {
     color: #3f3f3d;
 }
 
@@ -56,9 +61,11 @@ a:active {
     padding-top: 1rem;
 }
 
-.list_component > li > a {
+.list_component>li>a {
     text-align: center;
 }
 
-
+.options {
+    font-size: 17px;
+}
 
