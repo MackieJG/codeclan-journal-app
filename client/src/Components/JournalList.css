@@ -1,3 +1,16 @@
+.list_component{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.entry-button{
+    font-size: 10rem;
+    align-items: center;
+
+}
 
 .journal_list > ul {
     display: flex;
@@ -11,12 +24,6 @@
     
 }
 
-.list_component > ul{
-    text-decoration: none;
-    list-style-type: none;
-    
-}
-
 .no_marker{
     text-decoration: none;
     list-style-type: none; 
@@ -25,6 +32,10 @@
 a {
     
     text-decoration: none;
+    align-items: center !important;
+    padding-left: .75rem;
+    
+
 }
 a:visited {
     color: #3f3f3d;
@@ -42,10 +53,12 @@ a:active {
 .journal_entry_button {
     display: flex;
     justify-content: center;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 }
 
 .list_component > li > a {
     text-align: center;
 }
+
+
 
