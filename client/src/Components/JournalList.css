@@ -17,17 +17,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 30px auto auto;
-    max-width: 900px;
-    padding-bottom: 5rem;
+    max-width: 700px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    
 
 }
 
 .journal_list>ul>li {
     text-align: center;
     border: solid 1px #4a4a4a;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-family: ragasta;
+    font-size: 1rem;
+    background-color: #f6f1ec;
+    font-weight: 600;
 }
-
 
 .no_marker {
     text-decoration: none;
@@ -41,8 +46,6 @@ a {
     text-decoration: none;
     align-items: center !important;
     padding-left: .75rem;
-
-
 }
 
 a:visited {
@@ -74,4 +77,10 @@ a:link {
 
 .options {
     font-size: 17px;
+}
+
+.doing-image{
+   padding-left: 40rem;
+   padding-bottom: 5rem;
+   max-width: 32.5rem;
 }

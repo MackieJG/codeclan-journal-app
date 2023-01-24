@@ -10,6 +10,8 @@ const NavBarContainer = styled.div`
     align-items: center;
     padding: 1rem;
     justify-content: center;
+    font-family: soligant;
+    font-weight: bold;
 
     > div {
     min-width: 280px;
