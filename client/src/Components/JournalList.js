@@ -10,6 +10,9 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     });
     return (
         <>
+            {journalList}
+            
+
         <div className="journal_list">
             <ul className="no_marker">
                 {journalList}
