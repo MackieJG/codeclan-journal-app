@@ -1,7 +1,5 @@
 import logo from "../images/main_image.png";
 import styled from 'styled-components';
-import BarChart from "./BarChart";
-import LineChart from "./LineChart";
 
 const Home = () => {
 
@@ -19,12 +17,21 @@ const Home = () => {
     text-decoration: none;
     font-weight: 600px;
 
+    return (
+        <>
+            <StyledLogo>
+                <img id="self-logo" src={logo} alt="" />
+            </StyledLogo>
+            <StyledButtons />
+         
+
     > a {
         text-decoration: none;
         color: #4a4a4a;
         font-weight:1000;
     }
     `
+
 
 
    
@@ -36,7 +43,7 @@ return (
         </StyledLogo>
         <StyledButtons>
             <a href='/entry'>Make an Entry</a>
-            <a href='/stats'>How am I doing?</a>
+            <a href='/list'>How am I doing?</a>
         </StyledButtons>
     </>
 
