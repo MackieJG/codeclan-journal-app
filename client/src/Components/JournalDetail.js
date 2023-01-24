@@ -14,7 +14,7 @@ const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
         <>
             <li>
                 <p>Date {entry.date}</p>
-
+                <br></br>
                 <Link type="submit" value="view-entry" to={"/entry/" + entry._id}>View Entry </Link>
                 <br></br>
                 <div className="journal_entry_button">
