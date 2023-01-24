@@ -3,6 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { getEntry, putEntry } from "./JournalService";
 import './IndividualJournalEntry.css';
 import DiaryDisplay from "./DiaryDisplay";
+import logo from "../images/edit_an_entry.png";
+
 
 
 const IndividualJournalEntry = () => {
@@ -142,14 +144,13 @@ const IndividualJournalEntry = () => {
 
     return (
         <>
+        
+            <img id="edit-an-entry" src={logo} alt="" />
+            <div className="diary">
+                <DiaryDisplay entry={entry} />
+            </div>
 
-<DiaryDisplay entry={entry} />
 
-
-
-
-
-            <h2 class="heading">View/Edit your entry</h2>
             <form onSubmit={onSubmit} class="journal-form-indi" >
                 <div className="formWrap-2">
                     <label class="date" htmlFor="date">Date:</label>

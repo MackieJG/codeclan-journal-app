@@ -1,10 +1,17 @@
 .journal-form-indi {
+    text-align: center;
+    align-items: center;
     grid-gap: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(3, auto);
+    row-gap: 5rem;
+    column-gap: 4rem;
     margin: 50px auto auto;
-    max-width: 1140px;
+    max-width: 1500px;
     padding-bottom: 5rem;
+    font-family: ragasta;
+
 
 }
 
@@ -18,17 +25,19 @@
 
 .formWrap-2 {
     background: #8fd0ff7d;
-    border-radius: 5px;
+    border-radius: 35px;
     min-height: 100%;
     padding: 1.2rem 1rem;
     border: solid 1px
+    
 }
 
 .textarea-title {
     font-size: 20px;
     text-align: left;
     margin-bottom: 40px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-weight: bold;
 }
 
 .calendar {
@@ -38,37 +47,37 @@
 }
 
 .sleep {
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 17px;
 }
 
 .meals {
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 17px;
 }
 
 .screentime {
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 17px;
 }
 
 .downtime {
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 17px;
 }
 
 .mood {
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 17px;
 }
 
 .hydration {
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 17px;
 }
 
 .tip {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 20px;
 
 }
@@ -78,12 +87,22 @@
 }
 
 .save {
-    margin-top: 30px;
-    height: 50px;
-    font-size: 30px;
-    border-radius: 10px;
+    font-family: ragasta;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border:#cfdcec;
 }
 
 .tip-header {
     margin-top: 50px;
 }
+
+.diary{
+    padding-left: 18rem;
+}
+
+
