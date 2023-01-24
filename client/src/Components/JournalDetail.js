@@ -12,10 +12,6 @@ const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
 
     return (
         <>
-            {/* <div className="doing_logo">
-                <img id="doing-logo" src={doing_logo} alt="" />
-            </div> */}
-
             <li>
                 <p>Date {entry.date}</p>
 
