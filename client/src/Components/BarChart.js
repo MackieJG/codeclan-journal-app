@@ -26,32 +26,32 @@ const BarChart = ({ data }) => {
         labels,
         datasets: [
             {
-                label: 'sleep-stats',
+                label: 'sleep',
                 data: data.map(entry => entry.sleep),
                 backgroundColor: 'rgba(187, 9, 132, 0.5)',
             },
             {
-                label: 'meal-stats',
+                label: 'meals',
                 data: data.map(entry => entry.meals),
                 backgroundColor: 'rgba(81, 89, 132, 0.5)',
             },
             {
-                label: 'screen-stats',
+                label: 'screen',
                 data: data.map(entry => entry.screentime),
                 backgroundColor: 'rgba(25, 88, 102, 0.5)',
             },
             {
-                label: 'downtime-stats',
+                label: 'downtime',
                 data: data.map(entry => entry.downtime),
                 backgroundColor: 'rgba(125, 99, 132, 0.5)',
             },
             {
-                label: 'mood-stats',
+                label: 'mood',
                 data: data.map(entry => entry.mood),
                 backgroundColor: 'rgba(180, 79, 112, 0.5)',
             },
             {
-                label: 'hydration-stats',
+                label: 'hydration',
                 data: data.map(entry => entry.hydration),
                 backgroundColor: 'rgba(255, 99, 132, 0.5)',
             }
