@@ -45,3 +45,7 @@ a:active {
     padding-top: 0.5rem;
 }
 
+.list_component > li > a {
+    text-align: center;
+}
+
