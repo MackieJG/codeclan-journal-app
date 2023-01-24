@@ -36,7 +36,7 @@ return (
         </StyledLogo>
         <StyledButtons>
             <a href='/entry'>Make an Entry</a>
-            <a href='/stats'>How am I doing?</a>
+            <a href='/list'>How am I doing?</a>
         </StyledButtons>
     </>
 
