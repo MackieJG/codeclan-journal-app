@@ -15,10 +15,19 @@ const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
 
     return (
         <>
-            <p>Journal Entry Date: {entry.date}</p>
-            <button onClick={() => handleDelete()}> 🗑 </button>
-            <Link to={"/entry/" + entry._id}>View Entry </Link>
-            <hr />
+        <div className="list_component">          
+            <li>
+                <p>Date: {entry.date}</p>
+              
+                <Link to={"/entry/" + entry._id}>View Entry </Link>
+                <br></br>
+                <div className="journal_entry_button">
+                <button onClick={() => handleDelete()}> 🗑 </button>
+                </div>
+                
+                <hr />
+            </li>
+        </div>
         </>
     )
 };

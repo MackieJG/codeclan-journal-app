@@ -1,7 +1,5 @@
 import logo from "../images/main_image.png";
 import styled from 'styled-components';
-// import BarChart from "./BarChart";
-import LineChart from "./LineChart";
 
 const Home = () => {
 
@@ -18,7 +16,6 @@ const Home = () => {
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: 600px;
-    `
 
     return (
         <>
@@ -26,20 +23,31 @@ const Home = () => {
                 <img id="self-logo" src={logo} alt="" />
             </StyledLogo>
             <StyledButtons />
-            <div style={{ position: "relative", margin: "auto", height: "80vh" }}>
-            {/* <LineChart /> */}
-            </div>
+         
+
+    > a {
+        text-decoration: none;
+        color: #4a4a4a;
+        font-weight:1000;
+    }
+    `
 
 
 
-            {/* <StyledParagraph>
-                Chart your progress throughout your learning
-                at CodeClan and optimise your health with
-                the .self wellbeing app
-            </StyledParagraph> */}
-        </>
-    )
+   
 
+return (
+    <>
+        <StyledLogo>
+            <img id="self-logo" src={logo} alt="" />
+        </StyledLogo>
+        <StyledButtons>
+            <a href='/entry'>Make an Entry</a>
+            <a href='/list'>How am I doing?</a>
+        </StyledButtons>
+    </>
+
+)
 }
 
 export default Home;

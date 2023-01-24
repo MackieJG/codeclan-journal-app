@@ -1,0 +1,51 @@
+
+.journal_list > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+    text-decoration: none;
+    color: #403f3f;
+    font-family: soligant;
+    font-weight:1000;
+    
+}
+
+.list_component > ul{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.no_marker{
+    text-decoration: none;
+    list-style-type: none; 
+}
+
+a {
+    
+    text-decoration: none;
+}
+a:visited {
+    color: #3f3f3d;
+}
+a:active {
+    color: #3f3f3d;
+}
+ a:hover {
+    color: #3f3f3d;
+}
+ a:link {
+    color: #3f3f3d;
+}
+
+.journal_entry_button {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.list_component > li > a {
+    text-align: center;
+}
+

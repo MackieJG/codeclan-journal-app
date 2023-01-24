@@ -1,5 +1,5 @@
 import JournalDetail from "./JournalDetail";
-import BarChart from "./BarChart";
+import './JournalList.css';
 
 const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     if (!journalEntries) return <h2>Loading...</h2>
@@ -11,9 +11,13 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     return (
         <>
             {journalList}
-            <div style={{ position: "relative", margin: "auto", height: "40vh" }}>
-            <BarChart data={[]} />
-            </div>
+            
+
+        <div className="journal_list">
+            <ul className="no_marker">
+                {journalList}
+            </ul>
+        </div>
         </>
     )
 }
