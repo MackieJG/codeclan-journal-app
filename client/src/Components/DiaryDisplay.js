@@ -18,7 +18,7 @@ const DiaryDisplay = ({ entry }) => {
                     <p>{entry.what_6}</p>
 
                 </div>
-                <div clasName="diary-radar" style={{ position: "relative", margin: "auto", height: "40vh" }}>
+                <div clasName="diary-radar" style={{ position: "relative", height: "30vh"}}>
                     <RadarChart data={entry} />
                 </div>
             </div>
