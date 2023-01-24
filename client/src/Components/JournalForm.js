@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../images/make_an_entry.png';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { postEntry } from './JournalService';
 import './JournalForm.css';
 
@@ -31,37 +32,14 @@ const JournalForm = ({ addEntry }) => {
     newFormData[e.target.name] = e.target.value;
     setFormData(newFormData);
   }
-
-  // const onSelect = (e) => {
-  //   const newFormData = { ...formData };
-  //   newFormData[e.target.name] = e.target.value;
-  //   setFormData(newFormData);
-  // }
+  const navigate = useNavigate();
 
   const onSubmit = (e) => {
     e.preventDefault();
     postEntry(formData).then((data) => {
-      addEntry(data);
+      addEntry(data)
+      navigate('/list')
     })
-    setFormData({
-      date: "",
-      sleep: 1,
-      meals: 1,
-      screentime: 1,
-      downtime: 1,
-      family: 1,
-      mood: 1,
-      optimism: 1,
-      hydration: 1,
-      how_1: "",
-      what_1: "",
-      what_2: "",
-      what_3: "",
-      how_2: "",
-      what_4: "",
-      what_5: "",
-      what_6: "",
-    });
   };
 
 
