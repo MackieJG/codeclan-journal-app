@@ -1,5 +1,7 @@
 .diary-display{
 display:flex;
+background-color: hsla(180, 100%, 50%, 0.329);
+border-radius: 5rem;
 justify-content: space-around;
 align-content: center;
 padding: 4rem;
@@ -18,4 +20,13 @@ max-width:70vw;
 
 p{
     margin: 0;
+}
+
+.q{
+    font-weight: bold;
+font-size: .75rem;
+}
+
+.a{
+
 }
