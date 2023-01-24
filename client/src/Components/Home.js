@@ -15,21 +15,7 @@ const Home = () => {
     font-family: soligant;
     font-size: 1.5rem;
     text-decoration: none;
-    font-weight: 600px;
-
-    return (
-        <>
-            <StyledLogo>
-                <img id="self-logo" src={logo} alt="" />
-            </StyledLogo>
-            <StyledButtons />
-         
-
-    > a {
-        text-decoration: none;
-        color: #4a4a4a;
-        font-weight:1000;
-    }
+    font-weight: 600px;   
     `
 
 

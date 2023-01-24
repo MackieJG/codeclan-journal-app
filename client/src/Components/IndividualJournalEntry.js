@@ -47,10 +47,6 @@ const IndividualJournalEntry = () => {
         getEntry(id).then(data => setEntry(data));
     }, [id]);
 
-    const data = {
-        "2023-05-05": entry
-    }
-
 
 
     const onChange = (e) => {
