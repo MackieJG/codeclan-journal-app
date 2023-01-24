@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getEntry, putEntry } from "./JournalService";
 import './IndividualJournalEntry.css';
+import DiaryDisplay from "./DiaryDisplay";
 
 
 const IndividualJournalEntry = () => {
@@ -145,6 +146,13 @@ const IndividualJournalEntry = () => {
 
     return (
         <>
+
+<DiaryDisplay entry={entry} />
+
+
+
+
+
             <h2 class="heading">View/Edit your entry</h2>
             <form onSubmit={onSubmit} class="journal-form-indi" >
                 <div className="formWrap-2">
