@@ -69,7 +69,7 @@ const BarChart = ({ data }) => {
     return (
         <>
             
-                <Bar options={options} chart_data={chart_data} />
+                <Bar options={options} data={chart_data} />
         
         </>
     )
