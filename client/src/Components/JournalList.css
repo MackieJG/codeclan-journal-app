@@ -1,33 +1,39 @@
-
-.list_component{
+.list_component {
     text-decoration: none;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    
+
 }
 
-.entry-button{
+.entry-button {
     font-size: 10rem;
     align-items: center;
 
 }
 
-.journal_list > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 4rem;
-    text-decoration: none;
-    color: #403f3f;
-    font-family: soligant;
-    font-weight: 1000;
+.journal_list>ul {
+    grid-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px auto auto;
+    max-width: 900px;
+    padding-bottom: 5rem;
 
 }
 
-.no_marker{
+.journal_list>ul>li {
+    text-align: center;
+    border: solid 1px #4a4a4a;
+    border-radius: 20px;
+}
+
+
+.no_marker {
     text-decoration: none;
     list-style-type: none;
+    padding-right: 40px;
+    padding-left: 1px;
 }
 
 a {
@@ -35,7 +41,7 @@ a {
     text-decoration: none;
     align-items: center !important;
     padding-left: .75rem;
-    
+
 
 }
 
@@ -59,6 +65,7 @@ a:link {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
+    margin-bottom: 20px;
 }
 
 .list_component>li>a {
@@ -68,4 +75,3 @@ a:link {
 .options {
     font-size: 17px;
 }
-

@@ -20,20 +20,20 @@ const Home = () => {
 
 
 
-   
 
-return (
-    <>
-        <StyledLogo>
-            <img id="self-logo" src={logo} alt="" />
-        </StyledLogo>
-        <StyledButtons>
-            <a href='/entry'>Make an Entry</a>
-            <a href='/list'>How am I doing?</a>
-        </StyledButtons>
-    </>
 
-)
+    return (
+        <>
+            <StyledLogo>
+                <img id="self-logo" src={logo} alt="" />
+            </StyledLogo>
+            <StyledButtons>
+                <a href='/entry'>Make an Entry</a>
+                <a href='/list'>How am I doing?</a>
+            </StyledButtons>
+        </>
+
+    )
 }
 
 export default Home;
