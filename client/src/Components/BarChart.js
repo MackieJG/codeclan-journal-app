@@ -1,23 +1,23 @@
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend,
-} from 'chart.js';
+// import {
+//     Chart as ChartJS,
+//     CategoryScale,
+//     LinearScale,
+//     BarElement,
+//     Title,
+//     Tooltip,
+//     Legend,
+// } from 'chart.js';
 
-import { Bar } from 'react-chartjs-2';
+// import { Bar } from 'react-chartjs-2';
 
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend
-);
+// ChartJS.register(
+//     CategoryScale,
+//     LinearScale,
+//     BarElement,
+//     Title,
+//     Tooltip,
+//     Legend
+// );
 
 const BarChart = ({ data }) => {
     const labels = data.map(entry => entry.date);
@@ -58,23 +58,22 @@ const BarChart = ({ data }) => {
         ]
     }
 
-    const options = {
-        responsive: true,
-        plugins: {
-            legend: { position: 'top' },
-            title: { display: true, text: '.self-summary' }
-        }
-    }
 
-    return (
-        <>
-            
+//     const options = {
+//         responsive: true,
+//         plugins: {
+//             legend: { position: 'top' },
+//             title: { display: true, text: '.self-summary' }
+//         }
+//     }
+
+//     return (
+//         <>
                 <Bar options={options} data={chart_data} />
-        
-        </>
-    )
+//         </>
+//     )
 
-};
+// };
 
-export default BarChart;
+// export default BarChart;
 

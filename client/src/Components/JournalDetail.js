@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
 
-
-
     const handleDelete = () => {
         deleteEntry(entry._id)
             .then(() => {
@@ -12,22 +10,23 @@ const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
             })
     };
 
-
     return (
         <>
-        <div className="list_component">          
+            {/* <div className="doing_logo">
+                <img id="doing-logo" src={doing_logo} alt="" />
+            </div> */}
+
             <li>
-                <p>Date: {entry.date}</p>
-              
-                <Link to={"/entry/" + entry._id}>View Entry </Link>
+                <p>Date {entry.date}</p>
+
+                <Link type="submit" value="view-entry" to={"/entry/" + entry._id}>View Entry </Link>
                 <br></br>
                 <div className="journal_entry_button">
-                <button onClick={() => handleDelete()}> 🗑 </button>
+                    <button onClick={() => handleDelete()}> 🗑 </button>
                 </div>
-                
-                <hr />
+
             </li>
-        </div>
+
         </>
     )
 };
