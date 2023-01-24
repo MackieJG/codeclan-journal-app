@@ -10,9 +10,11 @@ import NavBar from '../Components/NavBar'
 import IndividualJournalEntry from '../Components/IndividualJournalEntry';
 
 
+
 const JournalContainer = () => {
 
     const [journalEntries, setJournalEntries] = useState([]);
+
 
     useEffect(() => {
         getEntries().then((allJournalEntries) => {
@@ -20,6 +22,8 @@ const JournalContainer = () => {
         })
 
     }, []);
+
+    
 
     const addEntry = (journalEntry) => {
         const newEntries = [...journalEntries, journalEntry]
