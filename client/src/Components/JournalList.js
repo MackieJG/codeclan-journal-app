@@ -15,12 +15,14 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry, chartData }) =>
 
     return (
         <>
-            <img className="doing-image" id="self-logo" src={logo} alt="" />
+            <div className="image-container">
+                <img id="self-logo" src={logo} alt="" />
+            </div>
             <div className="journal_list">
                 <ul className="no_marker">
                     {journalList}
                 </ul>
-                <BarChart data={journalEntries}/>
+                <BarChart data={journalEntries} />
             </div>
         </>
     )

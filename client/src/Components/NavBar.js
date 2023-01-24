@@ -10,7 +10,9 @@ const NavBarContainer = styled.div`
     align-items: center;
     padding: 1rem;
     justify-content: center;
-    font-family: soligant;
+    font-family: ragasta;
+    size: 10rem;
+
     font-weight: bold;
 
     > div {
@@ -24,9 +26,10 @@ const NavBarContainer = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #4a4a4a;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   align-items: center;
+  font-weight: 550;
 `
 
 
