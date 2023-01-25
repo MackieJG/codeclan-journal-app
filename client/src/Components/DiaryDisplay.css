@@ -28,7 +28,7 @@ p{
 font-size: .75rem;
 }
 
-#edit > a {
+a.edit {
     font-weight: bold;
     font-size: .7rem;
 
