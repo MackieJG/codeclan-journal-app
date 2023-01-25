@@ -5,7 +5,7 @@ import { LogoImage } from "./StyledLogo";
 import logo from "../images/edit_an_entry.png";
 
 
-const JournalList = ({ journalEntries, removeEntry, updateEntry, chartData }) => {
+const JournalList = ({ journalEntries, removeEntry, updateEntry }) => {
     if (journalEntries.length === 0) return <h2>Loading...</h2>
     console.log(journalEntries);
     const journalList = journalEntries.map((entry) => {

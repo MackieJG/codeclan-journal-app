@@ -47,6 +47,9 @@
 .sleep {
     margin-top: 10px;
     font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .meals {
@@ -84,16 +87,15 @@
     margin-top: 50px;
 }
 
-.save {
+/* .save-button2 {
     font-family: ragasta;
     font-size: 1.5rem;
-    font-weight: 700;
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     border:#cfdcec;
-}
+} */
 
 .tip-header {
     margin-top: 50px;
