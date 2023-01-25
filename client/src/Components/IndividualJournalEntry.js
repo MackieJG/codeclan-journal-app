@@ -345,7 +345,8 @@ const IndividualJournalEntry = () => {
                         value={entry.what_6} />
                 </div>
                 <br></br>
-                <input class="save" type="submit" value="Save" id="save" />
+                <input className="save-button2" type="submit" value="Save" id="save" />
+                <br></br>
             </form>
 
         </>

@@ -1,7 +1,7 @@
 import { deleteEntry } from './JournalService';
 import { Link } from 'react-router-dom';
 
-const JournalDetail = ({ entry, removeEntry, updateEntry }) => {
+const JournalDetail = ({ entry, removeEntry }) => {
 
     const handleDelete = () => {
         deleteEntry(entry._id)

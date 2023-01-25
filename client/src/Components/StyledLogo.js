@@ -3,8 +3,7 @@ import styled from 'styled-components';
 const StyledLogo = styled.div`
     display: flex;
     justify-content: center;
-    height: 600px;
-
+    height: 700px;
 `
 
 export const LogoImage = ({imagePath}) => {
