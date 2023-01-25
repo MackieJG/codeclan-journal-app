@@ -1,7 +1,9 @@
 import JournalDetail from "./JournalDetail";
 import './JournalList.css';
 import BarChart from "./BarChart";
-import logo from "../images/doing.png";
+import { LogoImage } from "./StyledLogo";
+import logo from "../images/edit_an_entry.png";
+
 
 const JournalList = ({ journalEntries, removeEntry, updateEntry, chartData }) => {
     if (journalEntries.length === 0) return <h2>Loading...</h2>
@@ -15,9 +17,8 @@ const JournalList = ({ journalEntries, removeEntry, updateEntry, chartData }) =>
 
     return (
         <>
-            <div className="image-container">
-                <img id="self-logo" src={logo} alt="" />
-            </div>
+            <LogoImage imagePath={logo} />
+
             <div className="journal_list">
                 <ul className="no_marker">
                     {journalList}

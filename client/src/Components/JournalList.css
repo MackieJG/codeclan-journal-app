@@ -42,7 +42,7 @@
     padding-left: 1px;
 }
 
-a {
+a{
 
     text-decoration: none;
     align-items: center !important;
@@ -86,4 +86,11 @@ a:link {
     padding-bottom: 5rem;
     max-width: 32.5rem;
 }
+
+/* .edit-an-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 28rem 0 28rem;
+} */
 

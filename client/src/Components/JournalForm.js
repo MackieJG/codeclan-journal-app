@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { postEntry } from './JournalService';
 import './JournalForm.css';
+import { LogoImage } from './StyledLogo';
 
 
 const JournalForm = ({ addEntry }) => {
@@ -46,9 +47,7 @@ const JournalForm = ({ addEntry }) => {
 
   return (
     <div class="outer-form-container">
-      <div className='logoContainer'>
-        <img id="entry_logo" src={logo} alt="" />
-      </div>
+      <LogoImage imagePath={logo} />
 
       <div className="formContainer">
         <form onSubmit={onSubmit} id="journal-form" >

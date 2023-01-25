@@ -1,13 +1,8 @@
-import logo from "../images/main_image.png";
 import styled from 'styled-components';
+import { LogoImage } from "./StyledLogo";
+import logo from "../images/main_image.png";
 
 const Home = () => {
-
-    const StyledLogo = styled.div`
-    display: flex;
-    justify-content: center;
-    height: 700px;
-    `
     const StyledButtons = styled.div`
     display: flex;
     justify-content: center;
@@ -20,9 +15,7 @@ const Home = () => {
 
     return (
         <>
-            <StyledLogo>
-                <img id="self-logo" src={logo} alt="" />
-            </StyledLogo>
+            <LogoImage imagePath={logo} />
             <StyledButtons>
                 <a href='/entry'>Make an Entry</a>
                 <a href='/list'>How am I doing?</a>
