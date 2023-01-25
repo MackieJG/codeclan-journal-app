@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 @font-face {
   font-family: soligant;
   src: url(fonts/Soligant.ttf);
@@ -22,9 +18,9 @@
   src: url(fonts/Ragasta.ttf);
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 body {
   background: url(images/background_image.png);
@@ -32,4 +28,37 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }

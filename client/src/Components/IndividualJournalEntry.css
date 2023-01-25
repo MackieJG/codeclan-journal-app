@@ -6,13 +6,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(3, auto);
     row-gap: 5rem;
-    column-gap: 4rem;
+    column-gap: 3rem;
     margin: 50px auto auto;
     max-width: 1500px;
-    padding-bottom: 5rem;
+    padding-bottom: rem;
     font-family: ragasta;
-
-
 }
 
 .heading {
@@ -102,7 +100,8 @@
 }
 
 .diary{
-    padding-left: 18rem;
+    padding-left: 0;
+    margin:0;
 }
 
 

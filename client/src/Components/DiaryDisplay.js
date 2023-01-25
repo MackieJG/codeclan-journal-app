@@ -33,10 +33,13 @@ const DiaryDisplay = ({ entry }) => {
                     
                     <p className="q">What are you most proud of, and why?</p>
                     <p className="a">{entry.what_6}</p>
+<br></br>
+<a href="#edit">(JUMP TO EDIT)</a>
+                   
 
 
                 </div>
-                <div clasName="diary-radar" style={{ position: "relative", height: "30vh"}}>
+                <div className="diary-radar" style={{ position: "relative", height: "30vh"}}>
                     <RadarChart data={entry} />
                 </div>
             </div>
