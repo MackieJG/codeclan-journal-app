@@ -24,7 +24,7 @@
 </details>
 
 <!-- ABOUT -->
-### Pickup
+### CodeClan Journal
 
 CodeClan Journal App is a web application that helps users blog their CodeClan course experience, given metrics to anaylse and make improvements to their well-being and experience.
 
